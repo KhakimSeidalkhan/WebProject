@@ -1,0 +1,30 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Nunito Sans', sans-serif;
+    background-image: url("/Users/khakim/Desktop/SDU 2 SEmestr/WebPro-Front/Project3/background.png");
+    background-size: cover;
+}
+.header{
+    display: flex; 
+    justify-content: space-around;
+    color: white;
+    font-size: 30px;
+    background-color: rgb(49, 48, 48); 
+}
+.header header{
+    margin: auto;
+    cursor: pointer;
+    justify-content: space-around;
+
+}
+.header a{
+    text-decoration: none;
+    color: rgb(0, 191, 255);
+    justify-content: center;
+    margin: 10px auto;
+}
+.header div:hover{
+    color:rgb(172, 160, 0);
+    cursor: pointer;
+}

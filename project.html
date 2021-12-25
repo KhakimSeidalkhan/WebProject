@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Almaty beautifull places</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="project.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body id="ex1">
+    
+    <header class="header">
+        <a href="project.html"><button class="btn btn-light"><i class="fa fa-home" ></i></button></a>
+        <a href="project1.html"><button class="btn btn-outline-light">Store</button></a>
+        <a href="project2.html"><button class="btn btn-outline-light">Sale</button></a>
+        <a href="project3.html"><button class="btn btn-outline-light">Test your Fortune</button></a>
+        <a href="page5.html"><button class="btn btn-outline-light">Payment and delivery</button></a>
+        <a href="page6.html"><button class="btn btn-outline-light">Coming soon</button></a>
+        <a href="page7.html"><button class="btn btn-outline-light">Overview</button></a>
+        <a href="page8.html"><button class="btn btn-outline-light">News</button></a>
+        <a href="page9.html"><button class="btn btn-outline-light">About Us</button></a>
+        <a href="tirkelu.html"><button class="btn btn-outline-light">Register</button></a>
+    </header>
+
+    <div class="social">
+        <a href="" class="fa fa-facebook"></a>
+        <a href="" class="fa fa-instagram"></a>
+        <a href="" class="fa fa-whatsapp"></a>
+    </div>
+
+    <div class="text">
+        <h1><b>Hello !</b></h1>
+        <p>Best tech store, has best prices</p>
+    </div>
+
+
+    <div class="sharyn">
+            <div id="ex1-layer" class="box"><h1>Buy device, by bomba price</h1></div>
+    </div>
+    
+    <script>
+        let constrain = 500;
+        let mouseOverContainer = document.getElementById("ex1");
+        let ex1Layer = document.getElementById("ex1-layer");
+ 
+        function transforms(x, y, el) {
+            let box = el.getBoundingClientRect();
+            let calcX = -(y - box.y - (box.height / 2)) / constrain;
+            let calcY = (x - box.x - (box.width / 2)) / constrain;
+  
+            return "perspective(100px) " + "   rotateX("+ calcX +"deg) " + "   rotateY("+ calcY +"deg) ";
+        };
+
+        function transformElement(el, xyEl) {
+            el.style.transform  = transforms.apply(null, xyEl);
+        }
+
+        mouseOverContainer.onmousemove = function(e) {
+            let xy = [e.clientX, e.clientY];
+            let position = xy.concat([ex1Layer]);
+
+        window.requestAnimationFrame(function(){
+            transformElement(ex1Layer, position);
+        });
+    };
+    </script>
+
+
+
+</body>
+</html>

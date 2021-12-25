@@ -1,0 +1,228 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Nunito Sans', sans-serif;
+    background-image: url("/Users/khakim/Desktop/SDU 2 SEmestr/WebPro-Front/Project3/background.png");
+    background-size: cover;
+}
+.header{
+    display: flex; 
+    justify-content: space-around;
+    color: white;
+    font-size: 30px;
+    background-color: rgb(49, 48, 48); 
+}
+
+.ad{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header header{
+    margin: auto;
+    cursor: pointer;
+    justify-content: space-around;
+
+}
+.header a{
+    text-decoration: none;
+    color: rgb(0, 191, 255);
+    justify-content: center;
+    margin: 10px auto;
+}
+.header div:hover{
+    color:rgb(172, 160, 0);
+    cursor: pointer;
+
+}
+.social a{
+    padding: 20px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 20%;
+    color: rgb(49, 48, 48);
+
+}
+.fa:hover{
+    color:rgb(224, 192, 7)
+
+}
+.social{
+    display: flex;
+    font-size: 30px;
+    justify-content: space-around;
+    padding: 10px auto;
+}
+
+.text{
+    margin: 0px auto;
+    padding-top: 100px;
+    color:rgb(70, 69, 69);
+    text-align: center;
+    font-size: 25px;
+}
+
+.text h1{
+    font-size: 100px;
+    color:rgb(255,255,255);
+}
+
+.sharyn{
+    color:rgb(224, 192, 7);
+    text-align: center;
+    margin-top: 50px;
+    font-size: 20px;
+
+}
+.sharyn img{
+    width: 800px;
+    margin: 10px auto;
+    border-radius: 50% ;
+}
+
+.shymbulak{
+    text-align: center;
+    margin-top: 50px;
+    color: seashell;
+    font-size: 30px;
+}
+
+.my-flex-container{
+  margin-top: 100px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.kolsai{
+    color: white;
+    text-align: center;
+    font-size: 30px;
+}
+
+.pogoda{
+    margin-top: 200px;
+    text-align: center;
+    color: seashell;
+}
+.price{
+
+    text-align: center;
+    color: seashell;
+}
+.my-flex-block{
+    margin-left: auto;
+    margin-right: auto;
+}
+* {box-sizing: border-box}
+
+/* Add padding to containers */
+.container {
+  padding: 16px;
+  margin-top: 100px;
+}
+
+.container label{
+  color: rgb(49, 48, 48);
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Overwrite default styles of hr */
+hr {
+  border: 1px solid rgb(49, 48, 48);
+  margin-bottom: 25px;
+}
+
+/* Set a style for the submit/register button */
+.registerbtn {
+  background-color: rgb(49, 48, 48);
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.registerbtn:hover {
+  opacity:1;
+}
+
+/* Add a blue text color to links */
+a {
+  color: rgb(49, 48, 48);
+}
+
+/* Set a grey background color and center the text of the "sign in" section */
+.signin {
+  background-color: rgb(49, 48, 48);
+  text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* @media(max-width: 800px){
+    .header{
+        display: block;
+        text-align: center;
+    }
+    .header div{
+        margin: 10px auto;
+        border-bottom: 2px rgb(134, 127, 127) solid;
+    }
+    .skills img{
+        width: 100vh;
+    }
+} */
